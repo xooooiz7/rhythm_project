@@ -1,18 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import axios from 'axios';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [text, setText] = useState(""); // State to hold the response text
+
+  function getTest() {
+    axios.get('http://localhost:5000/getRequest', { crossdomain: true })
+      .then(response => {
+        setText(response.data); // Update the state with the response data
+      })
+      .catch(error => {
+        console.error("There was an error fetching the data!", error);
+      });
+  }
 
   return (
     <>
-      <div>
-        Hellow World
-      </div>
+      <button onClick={getTest}>Test</button> {/* Simplified onClick syntax */}
+      <div>{text}</div> {/* Display the response text */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
