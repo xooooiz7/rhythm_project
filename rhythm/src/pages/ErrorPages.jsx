@@ -8,5 +8,4 @@ function Error() {
   )
 }
 
-export default Error
-Error
+export default ErrorPages
