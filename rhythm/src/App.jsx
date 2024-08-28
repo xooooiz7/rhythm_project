@@ -5,6 +5,7 @@ import { BrowserRouter, Routes,Route } from 'react-router-dom'
 
 import Home from './pages/Home';
 import GuitarTunner from './pages/GuitarTunner';
+import HomePage from './pages/HomePage'
 
 function App() {
   const [text, setText] = useState(""); // State to hold the response text
@@ -22,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/" element={<HomePage/>}></Route>
         <Route path="tunner" element={<GuitarTunner/>}></Route>
         <Route path="*" element={<Error/>}></Route>
       </Routes>
