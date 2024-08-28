@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
+import Navbar from '../components/Navbar';
+import './GuitarTunner.css'
+
 
 const GuitarTunner = () => {
   const [isProcessing, setIsProcessing] = useState(false);
@@ -139,10 +142,36 @@ const GuitarTunner = () => {
 
   return (
     <div>
-      <h1>GuitarTunner</h1>
-      <p>Microphone is active and processing...</p>
-      <p>Current tuning: {tuning}</p>
-      <canvas ref={canvasRef} width="600" height="200" />
+      <Navbar />
+      <div className='container-bg'>
+        <div className='containner-guitartunner'>
+          {/* <h1>GuitarTunner</h1>
+          <p>Microphone is active and processing...</p>
+          <p>Current tuning: {tuning}</p>
+          <canvas ref={canvasRef} width="600" height="200" /> */}
+          <div className='text-big'>Standard Guitar Tuning</div>
+          <div className='conatainer-tuning'>
+            <div className='tuning-minus'>-</div>
+            <div className='tuning-chord'>
+              <div className=''>D</div>
+            </div>
+            <div className='tuning-plus'>+</div>
+          </div>
+          <div className='text-small'>Auto Detect</div>
+          <div className='container-chord'>
+            <div className='container-selected'>
+              <button className='chord tuning-unfinished'>E</button>
+              <button className='chord tuning-finished'>A</button>
+              <button className='chord tuning-finished'>D</button>
+            </div>
+            <div className='container-selected'>
+                <button className='chord tuning-finished'>G</button>
+                <button className='chord tuning-unfinished'>B</button>
+                <button className='chord tuning-unfinished'>E</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

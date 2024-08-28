@@ -1,0 +1,66 @@
+.containner-guitartunner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20vh;
+}
+.conatainer-tuning{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    height: 5vh;
+    padding: 20vh;
+}
+.tuning-chord {
+    width: 14vw; /* ปรับขนาดตามต้องการ */
+    height: 7vw; /* ปรับขนาดตามต้องการ */
+    border-top-left-radius: 20vw;
+    border-top-right-radius: 20vw;
+    border: 0.15vw solid white; /* สีและความหนาของ border */
+    border-bottom: none; /* ลบเส้นขอบด้านล่าง */
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลางในแนวนอน */
+    align-items: end; /* จัดกึ่งกลางในแนวตั้ง */
+}
+.tuning-chord > div {
+    font-size: 5vh;
+    text-align: center; /* จัดข้อความให้อยู่กึ่งกลางในกรณีที่ข้อความมีหลายบรรทัด */
+}
+
+.container-chord{
+    display: flex;
+    justify-content: space-between;  
+    margin-top: 8vh;  
+}
+.text-big{
+    font-size: 2.5vh;
+}
+.text-small{
+    font-size: 1.75vh;
+}
+.container-selected{
+    display: flex;
+    flex-direction: row;
+    margin: 0 1.5vw 0 1.5vw ;
+}
+.chord{
+    color: #000;
+    font-weight: 375;
+    font-size: 3vh;
+    text-align: center;
+    border-radius: 100%;
+    padding: 0;
+    width: 3vw;
+    height: 3vw;
+    margin: 0vh 0.5vw 0 0.5vw ;
+    box-shadow: 0 1vh 1vh #000;
+}
+.tuning-unfinished{
+    background-color:#EAEAEA;
+}
+.tuning-finished{
+    background-color:#B0F4AE;
+}

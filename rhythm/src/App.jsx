@@ -3,7 +3,6 @@ import './App.css';
 import axios from 'axios';
 import { BrowserRouter, Routes,Route } from 'react-router-dom'
 
-import Home from './pages/Home';
 import GuitarTunner from './pages/GuitarTunner';
 import HomePage from './pages/HomePage'
 
