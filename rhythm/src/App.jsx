@@ -23,7 +23,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="tunner" element={<GuitarTunner/>}></Route>
+        <Route path="/tunner" element={<GuitarTunner/>}></Route>
         <Route path="*" element={<Error/>}></Route>
       </Routes>
     </BrowserRouter>
