@@ -1,0 +1,36 @@
+.button-container{
+    display: flex;
+    position: fixed;
+    width: 39vw;
+    height: 10vh;
+    margin-top: 10vh;
+    margin-left: 2vw;
+}
+.search-song-button,.overview-button , .guitartuner-button{
+    margin: 0;
+    padding: 0;
+    width: 12vw;
+    height: 4vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #dedede;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.search-song-button p ,.overview-button p  , .guitartuner-button p {
+    margin: 0;
+    padding: 0;
+    color: #1A1A1A;
+    align-items: center;
+    justify-content: center;
+}
+.search-song-button:hover ,.overview-button:hover , .guitartuner-button:hover{
+    background-color: #c8c8c8;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: .3s ease ;
+}
+.icon-back-button{
+    margin-right: 1vw;
+    margin-top: .3vh;
+}

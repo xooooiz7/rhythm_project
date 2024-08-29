@@ -1,11 +1,13 @@
 import React from 'react'
 import './HomePage.css';
 import Navbar from '../components/Navbar';
+import OptionButton from '../components/OptionButton';
 
 function HomePage() {
   return (
    <div>
     <Navbar/>
+    <OptionButton/>
     <div className="container-bg">
         <div className="container-homepage">
             <div className="icon-youtube">
