@@ -153,6 +153,8 @@ const GuitarTunner = () => {
           <div className='conatainer-tuning'>
             <div className='tuning-minus'>-</div>
             <div className='tuning-chord'>
+              <div className='tuning-center'></div>
+              <div className='tuning-motion'></div>
               <div className=''>D</div>
             </div>
             <div className='tuning-plus'>+</div>

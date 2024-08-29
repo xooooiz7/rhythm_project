@@ -27,9 +27,25 @@
 }
 .tuning-chord > div {
     font-size: 5vh;
+    font-weight: 700;
     text-align: center; /* จัดข้อความให้อยู่กึ่งกลางในกรณีที่ข้อความมีหลายบรรทัด */
 }
-
+.tuning-center{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.458);
+    width: 0.2vw;
+    height: 2vw;
+    margin-bottom: 12vh;
+    border-radius: 20%;
+}
+.tuning-center{
+    position: absolute;
+    background-color: #8AE5C4;
+    width: 0.2vw;
+    height: 2vw;
+    margin-bottom: 12vh;
+    border-radius: 20%;
+}
 .container-chord{
     display: flex;
     justify-content: space-between;  
