@@ -23,6 +23,7 @@
     padding: 0;
     color: #1A1A1A;
     align-items: center;
+    font-size: .97vw;
     justify-content: center;
 }
 .search-song-button:hover ,.overview-button:hover , .guitartuner-button:hover{

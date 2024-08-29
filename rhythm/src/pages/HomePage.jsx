@@ -2,7 +2,6 @@ import React from 'react'
 import './HomePage.css';
 import Navbar from '../components/Navbar';
 import OptionButton from '../components/OptionButton';
-
 function HomePage() {
   return (
    <div>
