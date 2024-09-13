@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '../components/Navbar';
 import './GuitarTunner.css'
+import OptionButton from '../components/OptionButton';
 
 
 const GuitarTunner = () => {
@@ -143,6 +144,7 @@ const GuitarTunner = () => {
   return (
     <div>
       <Navbar />
+      <OptionButton/>
       <div className='container-bg'>
         <div className='containner-guitartunner'>
           {/* <h1>GuitarTunner</h1>
