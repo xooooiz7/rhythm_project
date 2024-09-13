@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #11388500;
+    background-color: #07193c17;
     padding: 4px;
     padding-top: .8vw;
     width: 100%;
@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.122);
 }
   
   .nav-links {
@@ -78,10 +79,10 @@
   .dropbtn ,.nav-item a , .action-button{
     font-size: .9vw;
   }
-  .dropbtn{
+  .dropbtn , .nav-item button{
     background-color: rgba(255, 0, 0, 0);
   }
-  .dropbtn:hover{
+  .dropbtn:hover, .nav-item:hover button{
     border: 1px solid rgba(0, 0, 0, 0);
   }
   .icon-dropdown{
