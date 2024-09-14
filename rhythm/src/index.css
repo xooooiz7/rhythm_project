@@ -13,16 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[data-theme = 'light']{
-  --body-background : white;
-  --title:white;
-  --primary : blue;
-}
-[data-theme = 'dark']{
-  --body-background : rgb(52,52,52);
-  --title:white;
-  --primary : rgb(97,97,255);
-}
+
 a {
   font-weight: 500;
   color: #646cff;
