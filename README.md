@@ -1,2 +1,2 @@
 # rhythm_project
-website for rhythm project
+Create rhythm project by using ML
